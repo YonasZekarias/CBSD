@@ -1,0 +1,9 @@
+{
+  "name": "cbsd-monorepo",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:mobile": "npm run dev --workspace=apps/mobile"
+  }
+}
