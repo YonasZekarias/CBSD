@@ -1,10 +1,14 @@
 import React from 'react';
-import { Button, Badge, Card } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar } from '@cbsd/shared';
 
 export default function Home() {
   return (
     <div style={{ padding: 40, fontFamily: 'system-ui' }}>
       <h1>Next.js Web App</h1>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+        <Avatar name="John Doe" backgroundColor="#FF6B6B" />
+        <span>John Doe</span>
+      </div>
       <Badge text="Monorepo Badge" color="#fff" backgroundColor="#007AFF" />
       <p>Shared Components from Monorepo</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 300 }}>

@@ -1,11 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { Button, Badge, Card } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar } from '@cbsd/shared';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>React Native App</Text>
+      <View style={styles.userRow}>
+        <Avatar name="Jane Smith" backgroundColor="#FF6B6B" />
+        <Text style={styles.userName}>Jane Smith</Text>
+      </View>
       <Badge text="Monorepo Badge" color="#fff" backgroundColor="#34C759" />
       <Text style={styles.subtitle}>Shared Components from Monorepo</Text>
       <Button title="Primary Button" variant="primary" onPress={() => alert('Primary clicked!')} />
@@ -21,6 +25,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 40, alignItems: 'center', justifyContent: 'center', backgroundColor: '#f5f5f5' },
   title: { fontSize: 24, fontWeight: 'bold', marginBottom: 8 },
+  userRow: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 16 },
+  userName: { fontSize: 16, fontWeight: '600' },
   subtitle: { fontSize: 16, color: '#666', marginBottom: 24 },
   cardContainer: { marginTop: 24, width: '100%' },
 });
