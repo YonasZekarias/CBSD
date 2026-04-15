@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { Button, Badge, Card, Avatar } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input } from '@cbsd/shared';
 
 export default function App() {
   return (
@@ -17,6 +17,9 @@ export default function App() {
       <Button title="Outline Button" variant="outline" onPress={() => alert('Outline clicked!')} />
       <ScrollView style={styles.cardContainer}>
         <Card title="Mobile Card" description="This Card component is shared across web and mobile apps in the monorepo." />
+        <View style={{ marginTop: 16 }}>
+          <Input label="Name" placeholder="Enter your name" />
+        </View>
       </ScrollView>
     </View>
   );

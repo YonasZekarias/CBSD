@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Badge, Card, Avatar } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input } from '@cbsd/shared';
 
 export default function Home() {
   return (
@@ -18,6 +18,9 @@ export default function Home() {
       </div>
       <div style={{ marginTop: 24, maxWidth: 300 }}>
         <Card title="Web Card" description="This Card component is shared across web and mobile apps in the monorepo." />
+      </div>
+      <div style={{ marginTop: 24, maxWidth: 300 }}>
+        <Input label="Name" placeholder="Enter your name" />
       </div>
     </div>
   );

@@ -6,3 +6,5 @@ export { Card } from './Card';
 export type { CardProps } from './Card';
 export { Avatar } from './Avatar';
 export type { AvatarProps } from './Avatar';
+export { Input } from './Input';
+export type { InputProps } from './Input';
