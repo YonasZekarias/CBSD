@@ -8,3 +8,5 @@ export { Avatar } from './Avatar';
 export type { AvatarProps } from './Avatar';
 export { Input } from './Input';
 export type { InputProps } from './Input';
+export { Icon } from './Icon';
+export type { IconProps } from './Icon';

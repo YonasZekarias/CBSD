@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { Button, Badge, Card, Avatar, Input } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon } from '@cbsd/shared';
 
 export default function App() {
   return (
@@ -9,6 +9,7 @@ export default function App() {
       <View style={styles.userRow}>
         <Avatar name="Jane Smith" backgroundColor="#FF6B6B" />
         <Text style={styles.userName}>Jane Smith</Text>
+        <Icon name="star" size={20} />
       </View>
       <Badge text="Monorepo Badge" color="#fff" backgroundColor="#34C759" />
       <Text style={styles.subtitle}>Shared Components from Monorepo</Text>

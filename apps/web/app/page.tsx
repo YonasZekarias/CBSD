@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Badge, Card, Avatar, Input } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon } from '@cbsd/shared';
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
         <Avatar name="John Doe" backgroundColor="#FF6B6B" />
         <span>John Doe</span>
+        <Icon name="star" size={20} />
       </div>
       <Badge text="Monorepo Badge" color="#fff" backgroundColor="#007AFF" />
       <p>Shared Components from Monorepo</p>
