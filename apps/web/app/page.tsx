@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Badge, Card, Avatar, Input, Icon } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon, Toggle } from '@cbsd/shared';
 
 export default function Home() {
   return (
@@ -22,6 +22,10 @@ export default function Home() {
       </div>
       <div style={{ marginTop: 24, maxWidth: 300 }}>
         <Input label="Name" placeholder="Enter your name" />
+      </div>
+      <div style={{ marginTop: 24 }}>
+        <span>Enable notifications</span>
+        <Toggle />
       </div>
     </div>
   );

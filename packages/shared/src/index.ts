@@ -10,3 +10,5 @@ export { Input } from './Input';
 export type { InputProps } from './Input';
 export { Icon } from './Icon';
 export type { IconProps } from './Icon';
+export { Toggle } from './Toggle';
+export type { ToggleProps } from './Toggle';
