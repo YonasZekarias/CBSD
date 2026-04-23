@@ -12,3 +12,5 @@ export { Icon } from './Icon';
 export type { IconProps } from './Icon';
 export { Toggle } from './Toggle';
 export type { ToggleProps } from './Toggle';
+export { Progress } from './Progress';
+export type { ProgressProps } from './Progress';

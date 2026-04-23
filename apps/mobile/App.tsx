@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { Button, Badge, Card, Avatar, Input, Icon, Toggle } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress } from '@cbsd/shared';
 
 export default function App() {
   return (
@@ -24,6 +24,10 @@ export default function App() {
         <View style={{ marginTop: 24, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
           <Text>Enable notifications</Text>
           <Toggle />
+        </View>
+        <View style={{ marginTop: 24 }}>
+          <Text>Download Progress</Text>
+          <Progress value={65} max={100} color="#34C759" />
         </View>
       </ScrollView>
     </View>

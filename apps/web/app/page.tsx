@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Badge, Card, Avatar, Input, Icon, Toggle } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress } from '@cbsd/shared';
 
 export default function Home() {
   return (
@@ -26,6 +26,10 @@ export default function Home() {
       <div style={{ marginTop: 24 }}>
         <span>Enable notifications</span>
         <Toggle />
+      </div>
+      <div style={{ marginTop: 24, maxWidth: 300 }}>
+        <span>Download Progress</span>
+        <Progress value={65} max={100} color="#007AFF" />
       </div>
     </div>
   );
