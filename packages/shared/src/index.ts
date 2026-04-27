@@ -14,3 +14,5 @@ export { Toggle } from './Toggle';
 export type { ToggleProps } from './Toggle';
 export { Progress } from './Progress';
 export type { ProgressProps } from './Progress';
+export { Loader } from './Loader';
+export type { LoaderProps } from './Loader';
