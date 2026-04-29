@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader, Divider } from '@cbsd/shared';
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       </div>
       <Badge text="Monorepo Badge" color="#fff" backgroundColor="#007AFF" />
       <p>Shared Components from Monorepo</p>
+      <Divider margin={24} thickness={2} color="#007AFF" />
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 300 }}>
         <Button title="Primary Button" variant="primary" onPress={() => alert('Primary clicked!')} />
         <Button title="Secondary Button" variant="secondary" onPress={() => alert('Secondary clicked!')} />

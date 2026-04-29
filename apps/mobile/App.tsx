@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader, Divider } from '@cbsd/shared';
 
 export default function App() {
   return (
@@ -13,6 +13,7 @@ export default function App() {
       </View>
       <Badge text="Monorepo Badge" color="#fff" backgroundColor="#34C759" />
       <Text style={styles.subtitle}>Shared Components from Monorepo</Text>
+      <Divider margin={24} thickness={2} color="#34C759" />
       <Button title="Primary Button" variant="primary" onPress={() => alert('Primary clicked!')} />
       <Button title="Secondary Button" variant="secondary" onPress={() => alert('Secondary clicked!')} />
       <Button title="Outline Button" variant="outline" onPress={() => alert('Outline clicked!')} />
