@@ -18,3 +18,5 @@ export { Loader } from './Loader';
 export type { LoaderProps } from './Loader';
 export { Divider } from './Divider';
 export type { DividerProps } from './Divider';
+export { Modal } from './Modal';
+export type { ModalProps } from './Modal';

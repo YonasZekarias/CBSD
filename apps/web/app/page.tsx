@@ -1,7 +1,9 @@
 import React from 'react';
-import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader, Divider } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader, Divider, Modal } from '@cbsd/shared';
 
 export default function Home() {
+  const [showModal, setShowModal] = React.useState(false);
+
   return (
     <div style={{ padding: 40, fontFamily: 'system-ui' }}>
       <h1>Next.js Web App</h1>
@@ -34,6 +36,12 @@ export default function Home() {
       </div>
       <div style={{ marginTop: 24 }}>
         <Loader text="Loading..." />
+      </div>
+      <div style={{ marginTop: 24 }}>
+        <Button title="Open Modal" variant="primary" onPress={() => setShowModal(true)} />
+        <Modal visible={showModal} onClose={() => setShowModal(false)} title="Web Modal">
+          <p>This modal component is shared across web and mobile apps in the monorepo.</p>
+        </Modal>
       </div>
     </div>
   );

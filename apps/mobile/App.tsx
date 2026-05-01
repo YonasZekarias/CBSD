@@ -1,8 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader, Divider } from '@cbsd/shared';
+import { Button, Badge, Card, Avatar, Input, Icon, Toggle, Progress, Loader, Divider, Modal } from '@cbsd/shared';
 
 export default function App() {
+  const [showModal, setShowModal] = React.useState(false);
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>React Native App</Text>
@@ -33,6 +35,12 @@ export default function App() {
         <View style={{ marginTop: 24 }}>
           <Loader text="Loading..." />
         </View>
+        <View style={{ marginTop: 24 }}>
+          <Button title="Open Modal" variant="primary" onPress={() => setShowModal(true)} />
+          <Modal visible={showModal} onClose={() => setShowModal(false)} title="Mobile Modal">
+            <Text style={styles.modalText}>This modal component is shared across web and mobile apps in the monorepo.</Text>
+          </Modal>
+        </View>
       </ScrollView>
     </View>
   );
@@ -45,4 +53,5 @@ const styles = StyleSheet.create({
   userName: { fontSize: 16, fontWeight: '600' },
   subtitle: { fontSize: 16, color: '#666', marginBottom: 24 },
   cardContainer: { marginTop: 24, width: '100%' },
+  modalText: { fontSize: 14, color: '#666', lineHeight: 20 },
 });
